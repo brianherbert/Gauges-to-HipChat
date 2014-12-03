@@ -6,7 +6,7 @@ date_default_timezone_set('UTC');
 
 require 'vendor/autoload.php';
 
-$date = file_get_contents('date');
+$date = trim(file_get_contents('date'));
 
 $url = 'https://secure.gaug.es/gauges/'.GAUGE_ID;
 
